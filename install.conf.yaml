@@ -16,4 +16,11 @@
 
 # Initial shell commands when running ./install.
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+  - description: oh-my-zsh
+    command: '[ -z "$ZSH_VERSION" ] && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh) --unattended" || :'
+    stdout: true
+    stdin: true
+  - description: submodule-update
+    command: '[git submodule update --init --recursive, Installing submodules]'
+    stdout: true
+    stdin: true
