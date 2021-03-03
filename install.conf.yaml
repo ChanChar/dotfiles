@@ -5,11 +5,11 @@
 - clean: ['~']
 
 - link:
-    ~/.bashrc: bashrc
+    ~/.bashrc: shell/.bashrc
     ~/.zshrc:
         force: true
-        path: zshrc
-    ~/.vimrc: vimrc
+        path: shell/.zshrc
+    ~/.vimrc: vim/.vimrc
 
 - create:
     - ~/.vim/undo-history
