@@ -2,9 +2,3 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "Vundle.vim"]
-	path = Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim
-[submodule "editors/vim/Vundle.vim"]
-	path = editors/vim/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim
