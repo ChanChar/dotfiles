@@ -6,7 +6,9 @@
 
 - link:
     ~/.bashrc: bashrc
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+        force: true
+        path: zshrc
     ~/.vimrc: vimrc
 
 - create:
