@@ -1,6 +1,7 @@
 - defaults:
     link:
       relink: true
+      create: true
 
 - clean: ['~']
 
@@ -15,17 +16,17 @@
 
     # Editors
     ~/.vimrc: editors/vim/.vimrc
+    ~/.vim/plugged: editors/vim/plugged
+    ~/.vim/autoload: editors/vim/autoload
+    ~/.vim/colors: editors/vim/colors
 
 - create:
+    # Editors
     - ~/.vim/undo-history
 
 # Initial shell commands when running ./install.
 - shell:
   - description: install submodules
     command: 'git submodule update --init --recursive'
-    stdout: true
-    stdin: true
-  - description: install vim plugins via Vundle
-    command: 'vim +PluginInstall +qall'
     stdout: true
     stdin: true
