@@ -8,5 +8,5 @@ do
     pushd "$plugin"
     export url=$(git config --get remote.origin.url)
     popd
-    git submodule add "$url" plugged/$(basename $plugin)
+    git submodule add "$url" ./plugged/$(basename $plugin)
 done
