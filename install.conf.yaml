@@ -25,3 +25,7 @@
     command: 'git submodule update --init --recursive'
     stdout: true
     stdin: true
+  - description: install vim plugins via Vundle
+    command: 'vim +PluginInstall +qall'
+    stdout: true
+    stdin: true
