@@ -2,3 +2,39 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "editors/vim/plugged/vim-airline-themes"]
+	path = editors/vim/plugged/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "editors/vim/plugged/vim-airline"]
+	path = editors/vim/plugged/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "editors/vim/plugged/vim-gitgutter"]
+	path = editors/vim/plugged/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "editors/vim/plugged/vim-elixir"]
+	path = editors/vim/plugged/vim-elixir
+	url = https://github.com/elixir-editors/vim-elixir.git
+[submodule "editors/vim/plugged/vim-jsx"]
+	path = editors/vim/plugged/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+[submodule "editors/vim/plugged/ag.vim"]
+	path = editors/vim/plugged/ag.vim
+	url = https://github.com/rking/ag.vim.git
+[submodule "editors/vim/plugged/vim-indent-guides"]
+	path = editors/vim/plugged/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "editors/vim/plugged/vim-fugitive"]
+	path = editors/vim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "editors/vim/plugged/vim-rails"]
+	path = editors/vim/plugged/vim-rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "editors/vim/plugged/vim-colorschemes"]
+	path = editors/vim/plugged/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "editors/vim/plugged/molokai"]
+	path = editors/vim/plugged/molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule "editors/vim/plugged/ctrlp.vim"]
+	path = editors/vim/plugged/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
