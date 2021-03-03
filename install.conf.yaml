@@ -5,21 +5,22 @@
 - clean: ['~']
 
 - link:
-    ~/.bashrc: shell/.bashrc
+    # Shell
+    ~/.aliases: shell/.aliases
+    ~/.functions: shell/.functions
     ~/.zshrc:
         force: true
         path: shell/.zshrc
-    ~/.vimrc: vim/.vimrc
+    ~/.bashrc: shell/.bashrc
+
+    # Editors
+    ~/.vimrc: editors/vim/.vimrc
 
 - create:
     - ~/.vim/undo-history
 
 # Initial shell commands when running ./install.
 - shell:
-  - description: oh-my-zsh
-    command: '[ -z "$ZSH_VERSION" ] && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh) --unattended" || :'
-    stdout: true
-    stdin: true
   - description: install submodules
     command: 'git submodule update --init --recursive'
     stdout: true

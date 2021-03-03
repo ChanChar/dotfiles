@@ -3,7 +3,6 @@ set number
 set incsearch " search as characters are entered
 set ruler " shows column numbers
 set hlsearch " highlight matches
-set rtp+=~/.vim/bundle/Vundle.vim
 set backspace=indent,eol,start " Removes any trailing white spaces for whitelisted file types.
 set expandtab
 set shiftwidth=2
@@ -11,13 +10,15 @@ set tabstop=2
 set background=dark
 set t_Co=256
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let mapleader=" "
 
 colorscheme molokai
 
 filetype off " required
-filetype plugin indent on    " required
 
 syntax on
 
