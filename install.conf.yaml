@@ -13,6 +13,7 @@
         force: true
         path: shell/.zshrc
     ~/.bashrc: shell/.bashrc
+    ~/.tmux.conf: shell/.tmux.conf
 
     # Editors
     ~/.vimrc: editors/vim/.vimrc
