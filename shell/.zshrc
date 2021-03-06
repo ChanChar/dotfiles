@@ -1,5 +1,6 @@
 # Base directory for zsh configs
 ZSH_BASE=$HOME/dotfiles
+ASDF_DIR=$HOME/.asdf
 
 # Load Antigen
 # https://github.com/zsh-users/antigen
@@ -25,6 +26,9 @@ antigen bundle npm
 ## Ruby / Rails
 antigen bundle rails
 antigen bundle ruby
+
+## ASDF
+antigen bundle asdf
 
 ## OS specific plugins
 case `uname` in
@@ -66,3 +70,10 @@ if [[ -z $SHOPIFY_DEV_SETUP ]]; then
   [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
   if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 fi
+
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+
+# initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit

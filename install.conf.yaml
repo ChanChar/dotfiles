@@ -6,6 +6,12 @@
 - clean: ['~']
 
 - link:
+    # Runtime manager
+    ~/.asdf: asdf/.asdf
+    ~/.tool-versions:
+        force: true
+        path: asdf/.tool-versions
+
     # Shell
     ~/.aliases: shell/.aliases
     ~/.functions: shell/.functions
@@ -27,7 +33,7 @@
 
 # Initial shell commands when running ./install.
 - shell:
-  - description: install submodules
-    command: 'git submodule update --init --recursive'
-    stdout: true
-    stdin: true
+    - description: install submodules
+      command: 'git submodule update --init --recursive'
+      stdout: true
+      stdin: true
