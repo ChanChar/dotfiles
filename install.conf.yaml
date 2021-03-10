@@ -31,3 +31,7 @@
     command: 'git submodule update --init --recursive'
     stdout: true
     stdin: true
+  - description: ensure tmux configs are applied
+    command: 'tmux source-file ~/.tmux.conf'
+    stdout: true
+    stdin: true
