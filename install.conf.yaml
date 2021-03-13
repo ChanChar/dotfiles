@@ -38,6 +38,6 @@
       stdout: true
       stdin: true
     - description: update asdf plugins
-      command: 'asdf plugin update --all'
+      command: 'asdf plugin-update --all'
       stdout: true
       stdin: true
