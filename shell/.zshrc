@@ -29,6 +29,7 @@ antigen bundle npm
 ## Ruby / Rails
 antigen bundle rails
 antigen bundle ruby
+antigen bundle bundler
 
 ## Elixir / Erlang
 antigen bundle gusaiani/elixir-oh-my-zsh
