@@ -41,3 +41,7 @@
       command: 'asdf plugin-update --all'
       stdout: true
       stdin: true
+    - description: ensure tmux configs are applied for existing tmux sessions
+      command: 'tmux source-file ~/.tmux.conf'
+      stdout: true
+      stdin: true
