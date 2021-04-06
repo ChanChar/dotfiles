@@ -18,6 +18,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
 
+## Tmux
+antigen bundle tmux
+
 ## Javascript
 antigen bundle node
 antigen bundle npm
@@ -25,6 +28,7 @@ antigen bundle npm
 ## Ruby / Rails
 antigen bundle rails
 antigen bundle ruby
+antigen bundle bundler
 
 ## OS specific plugins
 case `uname` in
