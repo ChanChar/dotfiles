@@ -2,6 +2,9 @@
 ZSH_BASE=$HOME/dotfiles
 ASDF_DIR=$HOME/.asdf
 
+# Apply ZSH to shell
+. $ASDF_DIR/asdf.sh
+
 # Load Antigen
 # https://github.com/zsh-users/antigen
 source $ZSH_BASE/antigen/antigen.zsh
