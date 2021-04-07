@@ -2,6 +2,9 @@
 ZSH_BASE=$HOME/dotfiles
 ASDF_DIR=$HOME/.asdf
 
+# Apply ZSH to shell
+. $ASDF_DIR/asdf.sh
+
 # Load Antigen
 # https://github.com/zsh-users/antigen
 source $ZSH_BASE/antigen/antigen.zsh
@@ -26,6 +29,10 @@ antigen bundle npm
 ## Ruby / Rails
 antigen bundle rails
 antigen bundle ruby
+antigen bundle bundler
+
+## Elixir / Erlang
+antigen bundle gusaiani/elixir-oh-my-zsh
 
 ## Elixir / Phoenix
 ### https://github.com/gusaiani/elixir-oh-my-zsh
