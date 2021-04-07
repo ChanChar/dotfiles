@@ -27,6 +27,11 @@
     ~/.vim/autoload: editors/vim/autoload
     ~/.vim/colors: editors/vim/colors
 
+    # Version control
+    ~/.gitconfig:
+        force: true
+        path: git/.gitconfig
+
 - create:
     # Editors
     - ~/.vim/undo-history

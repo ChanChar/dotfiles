@@ -27,6 +27,10 @@ antigen bundle npm
 antigen bundle rails
 antigen bundle ruby
 
+## Elixir / Phoenix
+### https://github.com/gusaiani/elixir-oh-my-zsh
+antigen bundle gusaiani/elixir-oh-my-zsh
+
 ## ASDF
 antigen bundle asdf
 
