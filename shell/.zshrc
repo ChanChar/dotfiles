@@ -78,6 +78,11 @@ if [[ -z $SHOPIFY_DEV_SETUP ]]; then
   if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 fi
 
+## cloudplatform: add Shopify clusters to your local kubernetes config
+export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/charleschanlee/.kube/config:/Users/charleschanlee/.kube/config.shopify.cloudplatform
+for file in /Users/charleschanlee/src/github.com/Shopify/cloudplatform/workflow-utils/*.bash; do source ${file}; done
+kubectl-short-aliases
+
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
 
