@@ -2,7 +2,7 @@
 ZSH_BASE=$HOME/dotfiles
 ASDF_DIR=$HOME/.asdf
 
-# Apply ZSH to shell
+# Apply ZSH to shell. Only works if asdf was installed via dotbot and not homebrew.
 . $ASDF_DIR/asdf.sh
 
 # Load Antigen

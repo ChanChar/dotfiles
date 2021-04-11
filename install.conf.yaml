@@ -7,6 +7,9 @@
 
 - link:
     # Runtime manager
+    ~/.asdf:
+      force: true
+      path: asdf/.asdf
     ~/.tool-versions:
         force: true
         path: asdf/.tool-versions
