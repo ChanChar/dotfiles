@@ -22,6 +22,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
 
+## Tmux
+antigen bundle tmux
+
 ## Javascript
 antigen bundle node
 antigen bundle npm
@@ -32,9 +35,6 @@ antigen bundle ruby
 antigen bundle bundler
 
 ## Elixir / Erlang
-antigen bundle gusaiani/elixir-oh-my-zsh
-
-## Elixir / Phoenix
 ### https://github.com/gusaiani/elixir-oh-my-zsh
 antigen bundle gusaiani/elixir-oh-my-zsh
 

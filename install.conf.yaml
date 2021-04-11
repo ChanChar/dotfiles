@@ -7,7 +7,6 @@
 
 - link:
     # Runtime manager
-    ~/.asdf: asdf/.asdf
     ~/.tool-versions:
         force: true
         path: asdf/.tool-versions
@@ -38,15 +37,18 @@
 
 # Initial shell commands when running ./install.
 - shell:
-    - description: install submodules
+    - description: update submodules
       command: 'git submodule update --init --recursive'
       stdout: true
       stdin: true
+      stderr: true
     - description: update asdf plugins
       command: 'asdf plugin-update --all'
       stdout: true
       stdin: true
+      stderr: true
     - description: ensure tmux configs are applied for existing tmux sessions
       command: 'tmux source-file ~/.tmux.conf'
       stdout: true
       stdin: true
+      stderr: true
