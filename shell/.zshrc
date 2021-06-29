@@ -31,6 +31,9 @@ antigen bundle rails
 antigen bundle ruby
 antigen bundle bundler
 
+# Disable Spring by default
+export DISABLE_SPRING=true
+
 ## Elixir / Erlang
 antigen bundle gusaiani/elixir-oh-my-zsh
 
