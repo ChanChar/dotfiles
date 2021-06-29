@@ -2,7 +2,7 @@
 ZSH_BASE=$HOME/dotfiles
 ASDF_DIR=$HOME/.asdf
 
-# Apply ZSH to shell
+# Apply ZSH to shell. Only works if asdf was installed via dotbot and not homebrew.
 . $ASDF_DIR/asdf.sh
 
 # Load Antigen
@@ -22,6 +22,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
 
+## Tmux
+antigen bundle tmux
+
 ## Javascript
 antigen bundle node
 antigen bundle npm
@@ -35,6 +38,7 @@ antigen bundle bundler
 export DISABLE_SPRING=true
 
 ## Elixir / Erlang
+### https://github.com/gusaiani/elixir-oh-my-zsh
 antigen bundle gusaiani/elixir-oh-my-zsh
 
 ## ASDF
