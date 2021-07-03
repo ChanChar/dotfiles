@@ -49,6 +49,13 @@ case `uname` in
   Darwin)
     # Commands for OS X go here
     antigen bundle osx
+
+    if [[ -z $SHOPIFY_DEV_SETUP ]]; then
+      ## cloudplatform: add Shopify clusters to your local kubernetes config
+      export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/charleschanlee/.kube/config:/Users/charleschanlee/.kube/config.shopify.cloudplatform
+      for file in /Users/charleschanlee/src/github.com/Shopify/cloudplatform/workflow-utils/*.bash; do source ${file}; done
+      kubectl-short-aliases
+    fi
   ;;
   Linux)
     # Commands for Linux go here
@@ -84,11 +91,6 @@ if [[ -z $SHOPIFY_DEV_SETUP ]]; then
   [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
   if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 fi
-
-## cloudplatform: add Shopify clusters to your local kubernetes config
-export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/charleschanlee/.kube/config:/Users/charleschanlee/.kube/config.shopify.cloudplatform
-for file in /Users/charleschanlee/src/github.com/Shopify/cloudplatform/workflow-utils/*.bash; do source ${file}; done
-kubectl-short-aliases
 
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
